@@ -11,7 +11,7 @@ package vista;
  * @author Fernando J. Spitz
  * @version 1.0, 6 jun. 2017
  */
-public class VistaChat implements IMostrador {
+public class VistaChat implements IMostrador { 
 
 	@Override
 	public void mostrar(String mensaje) {

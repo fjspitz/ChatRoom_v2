@@ -19,12 +19,10 @@ public class SalaChat extends Observable {
 	private String nombre;
 	private int cantidadUsuarios;
 	private List<Usuario> usuarios;
-	private List<Mensaje> mensajes;
 	
 	public SalaChat(String nombre) {
 		this.nombre = nombre;
 		usuarios = new ArrayList<Usuario>();
-		mensajes = new ArrayList<Mensaje>();
 	}
 	
 	public void agregar(Usuario usuario) {
@@ -33,7 +31,6 @@ public class SalaChat extends Observable {
 	}
 	
 	public void agregarMensaje(Mensaje mensaje) {
-		mensajes.add(mensaje);
 		setChanged();
 		notifyObservers(mensaje);
 	}
